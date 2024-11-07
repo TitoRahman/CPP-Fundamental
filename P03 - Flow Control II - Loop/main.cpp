@@ -78,6 +78,5 @@ int main()
     //     }
     //     cout << "Nilai ganjil" << endl;
     // } while(nilai != 0);
-
     return 0;
 }
