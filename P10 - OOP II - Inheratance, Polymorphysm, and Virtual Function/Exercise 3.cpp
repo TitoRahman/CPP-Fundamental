@@ -185,6 +185,7 @@ class Mall {
             string nomorKendaraan;
             cout << "Masukkan nomor kendaraan: ";
             cin >> nomorKendaraan;
+            bool isFound = false;
             for (int i = 0; i < this->list_mobil.size(); i++) {
                 if (this->list_mobil[i].nomorKendaraan == nomorKendaraan) {
                     int waktuPergi;
@@ -201,10 +202,10 @@ class Mall {
                     }
                     this->list_mobil.erase(this->list_mobil.begin() + i);
                     this->jmlhKendaraan--;
-                    return;
+                    isFound = true;
                 }
             }
-            cout << "Kendaraan tidak ditemukan" << endl;
+            if (isFound != true) cout << "Kendaraan tidak ditemukan" << endl;
         }
     
 };

@@ -12,6 +12,7 @@ class Animal {
         Animal(string name){
             this->name = name;
         }
+        // Virtual Function
         virtual void sound(){
             cout << "animal create a sound!";
         }
